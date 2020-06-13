@@ -1,0 +1,45 @@
+<div class="card border-0 shadow-light text-center mb-4">
+	<div class="card-body position-relative">
+		<div class="top-right mt-2">
+			<a href="{{ UrlPaginaParlamentar }}" class="btn btn-link text-info p-0" alt="informações" target="_blank">
+				<i class="material-icons text-info vm">share</i>
+			</a>
+		</div>
+		<div class="h-100px position-relative overflow-hidden">
+			<div class="background-h-100">
+				<img src="{{ UrlFotoParlamentar }}" alt="" class="img-profile">
+			</div>
+		</div>
+		<h6 class="text-default text-bold" style="font-size: 15px;">{{ NomeCompletoParlamentar }}</h6>
+		<p class="small small-email">{{ EmailParlamentar }}<br>
+			<br/>
+			<span *ngIf="MembroMesa == 'Sim'" class="text-warning font-size-11">
+				Parlamentar membro de mesa
+			</span>
+			<span *ngIf="MembroLideranca == 'Sim'" class="text-warning font-size-11">
+				Parlamentar membro de liderança
+			</span><br/>
+		</p>
+		<div class="row">
+			<hr class="mt-0" style="width: 70%; margin: auto;">
+			<div class="col-md-6">
+				<p id="{{ 'comissao-titular-'+CodigoParlamentar }}" class="text-warning font-size-11 text-comission">
+				0 comissões</p>
+				<small class="small-info-custom">TITULAR</small>
+			</div>
+			<div class="col-md-6">
+				<p id="{{ 'comissao-suplente-'+CodigoParlamentar }}" class="text-warning font-size-11 text-comission">
+				0 comissões</p>
+				<small class="small-info-custom">Suplente</small>
+			</div>
+			<hr class="mt-0" style="width: 70%; margin: auto;">
+		</div>
+		<div class="row margin-top-15 ">
+			<div class="col text-left">
+				<p class="text-success my-0">{{ SiglaPartidoParlamentar }}
+					<sup>{{ UfParlamentar }}</sup>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

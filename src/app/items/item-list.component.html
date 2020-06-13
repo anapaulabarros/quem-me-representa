@@ -1,0 +1,21 @@
+<div class="container">
+	<h6 class="page-subtitle">Lista de Parlamentares em exercício</h6>
+	<div class="row">
+		
+		<!--Item-->
+		<div class="col-12 col-md-3" *ngFor="let item of items">
+			<item-app 
+				[CodigoParlamentar]="item['IdentificacaoParlamentar'].CodigoParlamentar"
+				[NomeCompletoParlamentar]="item['IdentificacaoParlamentar'].NomeCompletoParlamentar"
+				[UrlFotoParlamentar]="item['IdentificacaoParlamentar'].UrlFotoParlamentar"
+				[UrlPaginaParlamentar]="item['IdentificacaoParlamentar'].UrlPaginaParlamentar"
+				[EmailParlamentar]="item['IdentificacaoParlamentar'].EmailParlamentar"
+				[SiglaPartidoParlamentar]="item['IdentificacaoParlamentar'].SiglaPartidoParlamentar"
+				[UfParlamentar]="item['IdentificacaoParlamentar'].UfParlamentar"
+				[MembroMesa]="item['IdentificacaoParlamentar'].MembroMesa"
+				[MembroLideranca]="item['IdentificacaoParlamentar'].MembroLideranca">
+			</item-app>
+		</div>
+
+	</div>
+</div>

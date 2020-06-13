@@ -1,0 +1,17 @@
+div {
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	margin: 20px 50px;
+	flex-wrap: wrap-reverse;
+
+	* {
+		flex: 1 0 40%;
+	}
+
+	:first-child {
+		flex: 1 0 60%;
+	}
+}

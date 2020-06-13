@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Lista de parlamentares brasileiros, quem nos representa.">
+  <meta name="author" content="Ana Paula Barros">
+  <base href="/">
+  <title>Dados dos parlamentares do Senado brasileiro</title> 
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Elegant font icons -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <!-- Elegant font icons -->
+  <link href="./assets/css/material-icons.css" rel="stylesheet">
+  <!-- Swiper Slider -->
+  <link href="./assets/css/swiper.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./assets/css/style-gray.css" rel="stylesheet" id="style">
+
+  <link href="./assets/css/custom.css" rel="stylesheet" id="style">
+
+</head>
+
+<body class="ui-rounded">
+  <app-root></app-root>
+  
+  <!-- scroll to top button -->
+  <button type="button" class="btn btn-default default-shadow scrollup bottom-right position-fixed btn-44">
+    <span class="arrow_carrot-up"></span>
+  </button>
+  <!-- scroll to top button ends-->
+  <!-- Required jquery and libraries -->
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+
+  <!-- cookie css -->
+  <script src="./assets/js/jquery.cookie.js"></script>
+
+  <!-- Swiper slider  -->
+  <script src="./assets/js/swiper.min.js"></script>
+
+  <!-- Masonry js -->
+  <script src="./assets/js/masonry.pkgd.min.js"></script>
+
+  <!-- Customized jquery file  -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/color-scheme-demo.js"></script>
+  <script src="./assets/js/custom.js"></script>
+
+  <script>
+      "use strict"
+      $(document).ready(function() {
+          /* Swiper slider */
+          var swiper = new Swiper('.swiper-categories', {
+              slidesPerView: 'auto',
+              spaceBetween: 0,
+              pagination: false,
+          });
+          var swiper = new Swiper('.swiper-offers', {
+              slidesPerView: 'auto',
+              spaceBetween: 20,
+              pagination: false,
+          });
+
+          /* masonry js */
+          /* $('#search-tab[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+
+          })*/
+
+      
+          /* increasenumber */
+          $('.add').on('click', function() {
+              var current = parseInt($(this).closest('.increasenumber').find('input').val());
+              $(this).closest('.increasenumber').find('input').val(current + 1);
+          });
+          $('.remove').on('click', function() {
+              if ($(this).closest('.increasenumber').find('input').val() > 0) {
+                  var current = parseInt($(this).closest('.increasenumber').find('input').val());
+                  $(this).closest('.increasenumber').find('input').val(current - 1);
+              }
+          });
+
+      });
+
+  </script>
+</body>
+</html>

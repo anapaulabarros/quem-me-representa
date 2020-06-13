@@ -1,0 +1,10 @@
+<!-- Swiper -->
+<div class="swiper-container swiper-categories text-center swiper-container-horizontal">
+	<div class="swiper-wrapper">
+
+		<div *ngFor="let item of items" class="swiper-slide w-auto p-2 swiper-slide-active">
+			<menu-item-app [active]="isActive(item.text)" [img]="item.img" [text]="item.text" (click)="onClickHandle(item.text)"></menu-item-app>
+		</div>
+	</div>
+	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
