@@ -8,6 +8,5 @@ $ npm install
 ```
 ```
 $ ng serve
-```
-```
+
 
